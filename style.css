@@ -1,0 +1,84 @@
+/*Se define un color para diferenciar la aplicación del body*/
+body {
+  background-color: rgb(250, 249, 249);
+  font-family: "Ubuntu", sans-serif;
+  color: #171344;
+  padding: 20px;
+}
+
+/*Se le da un tamaño en porcentaje, para que se adapte al tamaño de la pantalla*/
+main {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px rgb(180, 180, 180);
+  padding-top: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info {
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.blue {
+  background-color: #171344;
+}
+
+img {
+  max-width: 100%;
+}
+
+#colors,
+#fonts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*Se utiliza para centrar después de usar flex*/
+  align-items: center; /*También se utiliza para centrar pero en el eje contrario al justify-content*/
+}
+/*El grid se utiliza para organizar la estructura de la página*/
+/*El flex se utiliza para organizar los elementos dentro de una cuadrícula*/
+
+#colors {
+  gap: 1rem; /*Se utiliza para dar un espacio equitativo entre los elementos hijos*/
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#green {
+  color: #33bc39;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 5rem;
+  text-shadow: 1px 3px 4px black;
+}
+
+#color1 {
+  background-color: white;
+}
+#color2 {
+  background-color: #33bc39;
+}
+#color3 {
+  border: 2px solid white;
+  color: white;
+}
+
+.color {
+  text-shadow: 1px 1px 2px black; /* ejeX ejeY tamaño color */
+  border-radius: 5px;
+  padding: 0.5rem;
+}
